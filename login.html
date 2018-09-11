@@ -3,90 +3,96 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="container-fluid login">
+    <div class="container-fluid p-0 login">
       <!-- header -->
-      <header class="row header">
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="nav navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">56OVERSEA</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li role="presentation" class=""><a href="#">HOME</a></li>
-                <li role="presentation"><a href="#">ABOUT</a></li>
-                <li role="presentation"><a href="#">TEAM</a></li>
-                <li role="presentation"><a href="#">PORT</a></li>
-                <li role="presentation"><a href="#">SIGNUP</a></li>
+      <div class="container-fluidsearch" style="">
+        <!-- header -->
+        <header>
+          <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.svg" width="30" alt="logo" style="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PORT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SIGNUP</a>
+                </li>
               </ul>
             </div>
-            <!-- /.navbar-collapse -->
+          </nav>
+        </header>
+        <!-- 滚动images d-flex -->
+        <section class="promo section clearfix row m-0">
+          <div class="intro col-md-7 col-sm-5" style="height: 100px;">
+            <h1 class="title align-middle">To Find Oversea Local Rate Easily</h1>
           </div>
-          <!-- /.container-fluid -->
-        </nav>
-      </header>
-      <!-- 滚动images -->
-      <section class="promo section">
-        <div class="row">
-          <div class="container intro col-md-7 col-sm-5">
-            <h1 class="title">To Find Oversea Local Rate Easily</h1>
-          </div>
-          <div class="modal-content pull-right col-md-4  col-sm-5">
-            <div class="modal-header">
-              <h4 id="loginModalLabel" class="modal-title text-center">LOG IN TO YOUR ACCOUNT</h4>
-            </div>
-            <div class="modal-body">
-              <div class="divider"><span></span></div>
-              <div class="login-form-container">
-                <form action="#" name="loginform" accept-charset="utf-8" id="login_form" class="login-form" method="post">
-                  <input type="hidden" name="to" value="log">
-                  <div class="loginHint" id="loginHint" style="display: none;"></div>
-                  <div class="form-group email">
-                    <label class="sr-only" for="login-email">Your email</label>
-                    <input id="u" name="mail" type="email" class="form-control login-email" placeholder="Your email">
-                  </div>
-                  <!--//form-group-->
-                  <div class="form-group password">
-                    <label class="sr-only" for="login-password">Password</label>
-                    <input id="p" name="password" type="password" class="form-control login-password" placeholder="Password">
-                    <span><a href="http://59.110.24.190:809/56Oversea/login/forgetpassword" class="forgot-password">Forgot Password?</a></span>
-                  </div>
-                  <!--//form-group-->
-                  <button type="submit" class="btn btn-block btn-cta-primary" href="http://59.110.24.190:809/56Oversea/login/forgetpassword">Log in</button>
-                  <div class="checkbox remember">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
-                  </div>
-                  <!--//checkbox-->
-                </form>
+          <div class="col-md-5 col-sm-5">
+            <div class="modal-content float-left">
+              <div class="modal-header">
+                <h4 id="loginModalLabel" class="modal-title text-center">LOG IN TO YOUR ACCOUNT</h4>
               </div>
-              <!--//login-form-container-->
+              <div class="modal-body">
+                <div class="divider"><span></span></div>
+                <div class="login-form-container">
+                  <form action="#" name="loginform" accept-charset="utf-8" id="login_form" class="login-form" method="post">
+                    <input type="hidden" name="to" value="log">
+                    <div class="loginHint" id="loginHint" style="display: none;"></div>
+                    <div class="form-group email">
+                      <label class="sr-only" for="login-email">Your email</label>
+                      <input id="u" name="mail" type="email" class="form-control login-email" placeholder="Your email">
+                    </div>
+                    <!--//form-group-->
+                    <div class="form-group password">
+                      <label class="sr-only" for="login-password">Password</label>
+                      <input id="p" name="password" type="password" class="form-control login-password" placeholder="Password">
+                      <span><a href="http://59.110.24.190:809/56Oversea/login/forgetpassword" class="forgot-password">Forgot Password?</a></span>
+                    </div>
+                    <!--//form-group-->
+                    <button type="submit" class="btn btn-block btn-cta-primary" href="http://59.110.24.190:809/56Oversea/login/forgetpassword">Log in</button>
+                    <div class="checkbox remember">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                    <!--//checkbox-->
+                  </form>
+                </div>
+                <!--//login-form-container-->
+              </div>
+              <!--//modal-body-->
+              <div class="modal-footer">
+                <p>New to Tempo?
+                  <a href="http://59.110.24.190:809/56Oversea//pages/login.jsp" class="signup-link">Sign up now.</a>
+                </p>
+              </div>
+              <!--//modal-footer-->
             </div>
-            <!--//modal-body-->
-            <div class="modal-footer">
-              <p>New to Tempo?
-                <a href="http://59.110.24.190:809/56Oversea//pages/login.jsp" class="signup-link">Sign up now.</a>
-              </p>
-            </div>
-            <!--//modal-footer-->
           </div>
-        </div>
-      </section>
-    </div>
-  </body>
-</html>
+        </section>
+      </div>
+      <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.js"></script>
+    </body>
+  </html>
