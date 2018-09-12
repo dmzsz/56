@@ -3,54 +3,221 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body cz-shortcut-listen="true">
     <div class="container-fluid p-0 search" style="">
       <!-- header -->
       <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <img src="image/logo.svg" width="30" alt="logo" style="">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">TEAM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PORT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SIGNUP</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+          <nav class="nav navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="login.html">
+              <!-- <img src="image/logo.svg" width="30" alt="logo" style=""> -->
+              <span style="font-size: 50px; color: #e40a0a">56</span><span style="color: #4212ce">OVERSEA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html"><span>HOME</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>ABOUT</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>TEAM</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>PORT</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>SIGNUP</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
       <hr>
       <!-- search -->
-      <div class="container-fluid p-0 search-container">
-        <div class="group">
-        </div>
-        <div class="pae">
+      <div class="container-fluid pt-4 search-container">
+        <div class="container">
+          <div class="search">
+            <div class="ml-3 header">
+              <h4 class="font-weight-bold">Search...</h4>
+            </div>
+            <div class="card container">
+              <div class="row">
+                <div class="col origin">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group row">
+                        <div class="col">
+                          <div class="form-group row">
+                            <label><h5>Port Name</h5></label>
+                            <select class="form-control" id="">
+                              <option selected>Port Name</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="form-group row">
+                            <label><h5>Cargo Desciption</h5></label>
+                            <input type="text" class="form-control" id="postal-code" placeholder="Cargo Desciption">
+                          </div>
+                        </div>
+                        <div class="col ml-4">
+                          <div class="form-group row mt-5">
+                            <label class="radio-inline mr-2">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked=""> Buyer
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Seller
+                            </label>
+                          </div>
+                          <div class="form-group row">
+                            <label class="radio-inline mr-2">
+                              <input type="radio" name="inlineRadioOptionss" id="inlineRadio1" value="option1" checked=""> Import
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="inlineRadioOptionss" id="inlineRadio1" value="option1"> Export
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-primary mb-2 float-right">Searching ...</button>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="form-group form-inline row set-count">
+                      <div class="input-group pr-5">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">20GP</span>
+                        </div>
+                        <input type="number" class="form-control text-center" value="0" aria-label="20Gp" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group pr-5">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">40GP</span>
+                        </div>
+                        <input type="number" class="form-control text-center" value="0" aria-label="40Gp" aria-describedby="basic-addon1">
+                      </div>
+                      <div class="input-group pr-5">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1">40HC</span>
+                        </div>
+                        <input type="number" class="form-control text-center" value="0" aria-label="20HC" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cargo-details mt-4">
+            <div class="ml-3 header">
+              <h4 class="font-weight-bold">Cargo-Details</h4>
+            </div>
+            <div class="card container">
+              <div class="row">
+                <div class="col destination">
+                  <div class="card-body">
+                    <div class="show-table">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>
+                              <input type="checkbox" aria-label="Checkbox for following text input"></div>
+                            </th>
+                            <th scope="col">Charge Description</th>
+                            <th scope="col">20GP</th>
+                            <th scope="col">40GP</th>
+                            <th scope="col">40HC</th>
+                            <th scope="col">As per B/L</th>
+                            <th scope="col">Container</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="a-center ">
+                                <input type="checkbox" aria-label="Checkbox for following text input">
+                            </td>
+                            <td>#########</td>
+                            <td>180</td>
+                            <td>360</td>
+                            <td>360</td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                            <td>##########</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>100</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                            <td>##########</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>170</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                            <td>##########</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>120</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                            <td>##########</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>160</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td scope="row"><input type="checkbox" aria-label="Checkbox for following text input"></td>
+                            <td>##########</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>180</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="" class="btn btn-primary">Get the Agent Details</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div><!--Cargo-Details -->
+              <br/>
+              <br/>
+            </div>
+          </div>
+          <div class="statistic fixed-bottom">
+            <div class="container">
+              <h3 class="float-right total mb-0 mt-1"> Total: $0</h3>
+              &nbsp;
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
