@@ -5,3 +5,7 @@
 //     customDirectionNav: $(".custom-navigation a")
 //   });
 // });
+//
+$('.carousel').carousel({
+    pause: "false"
+});
