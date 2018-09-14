@@ -1,0 +1,24 @@
+.agent-details-container {
+    background-color: rgba(135, 181, 180, 0.5);
+    background: linear-gradient(to bottom, #87b5b480, white);
+}
+
+.agent-details-container .container .panel {
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
+}
+
+.agent-details-container .set-count input {
+    width: 100px;
+    /* text-align: center; */
+}
+
+.agent-details-container .statistic .container {
+    background-color: #d4ac37;
+    line-height: 2.5em;
+}
+
+header + hr {
+    width: 50%
+}
+

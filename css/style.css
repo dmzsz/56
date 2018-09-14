@@ -10,10 +10,13 @@ header .navbar a.navbar-brand {
   font-weight: bold;
 }
 
-.navbar-nav  a.active span, .navbar-nav a:hover span {
-    padding-bottom: 5px;
-    border-bottom:  3px solid blue;
+.navbar-nav a.active span,
+.navbar-nav a:hover span {
+  padding-bottom: 5px;
+  border-bottom: 3px solid blue;
 }
+
+div {}
 
 header .navbar a.navbar-brand img {
   width: 9em;
@@ -52,13 +55,15 @@ header .navbar-brand {
   font: bold;
   max-width: 1000px;
 }
+
 .login .promo .panel {
   padding: 15px;
   box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
   opacity: 0.9;
 }
-.login .promo .panel button{
- opacity: 1;
+
+.login .promo .panel button {
+  opacity: 1;
 }
 
 .search .header .navbar-default {
@@ -96,11 +101,11 @@ header .navbar-brand {
 }
 
 .search-container .set-count input {
-  width: 100px;  /* text-align: center; */
+  width: 100px;
+  /* text-align: center; */
 }
 
 .search-container .statistic .container {
   background-color: #d4ac37;
   line-height: 2.5em;
 }
-

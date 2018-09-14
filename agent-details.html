@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/commont.css">
+  <link rel="stylesheet" type="text/css" href="css/agent.css">
+</head>
+
+<body cz-shortcut-listen="true" class="agent-details">
+  <div class="container-fluid p-0">
+    <!-- header -->
+    <header>
+      <nav class="nav navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <!-- <img src="image/logo.svg" width="30" alt="logo" style=""> -->
+          <span style="font-size: 50px; color: #e40a0a">56</span><span style="color: #4212ce">OVERSEA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><span>HOME</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>ABOUT</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>TEAM</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>PORT</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span>SIGNUP</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <hr>
+    <!-- search -->
+    <div class="container-fluid pt-4 agent-details-container">
+      <div class="container">
+        <div class="search">
+          <div class="ml-3 header">
+            <h4 class="font-weight-bold">Agent Details</h4>
+          </div>
+          <div class="card container">
+            <div class="row">
+              <div class="card-body">
+                <h3 class="port-name">
+                  Port Name: Dubai
+                </h3>
+                <hr><div class="shadow shadow5"><p>旋转效果</p></div>
+                <div class="port">
+                  <ul class="vertical-box">
+                    <li class="agent-info">
+                      <div class="logo text-center">
+                        <img src="image/ya-logo.jpg" class="rounded-circle mx-auto d-block" alt="">
+                        <!-- <span class="name ">ya</span> -->
+                      </div>
+                      <ul class="message">
+                        <li class="name align-text-bottom">Name</li>
+                        <li class="company">Company</li>
+                        <li class="domain">Scope</li>
+                      </ul>
+                    </li>
+                    <li class="agent-info"></li>
+                    <li class="agent-info"></li>
+                    <li class="agent-info"></li>
+                    <li class="agent-info"></li>
+                  </ul>
+                  <ul class="box">
+                    <li class="agent-info media">
+                        <img src="image/ya-logo.jpg" class="rounded-circle align-self-center ml-3 mr-3 d-block" alt="">
+                        <div class="media-body align-self-center">
+                          <ul class="message align-self-center mt-0 mb-1">
+                            <li class="name align-text-bottom">Name</li>
+                            <li class="company">Company</li>
+                            <li class="domain">Scope</li>
+                          </ul>
+                      </div>
+                    </li>
+                    <li class="agent-info media"></li>
+                    <li class="agent-info media"></li>
+                    <li class="agent-info media"></li>
+                    <li class="agent-info media"></li>
+                    <li class="agent-info media"></li>
+                  </ul>
+                  
+                </div>
+              </div>
+              <!-- card container -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search -->
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+<style>
+.vertical-box .agent-info {
+  /* width: 12rem;
+  height: 20rem; */
+  background: url('image/ms-v.jpg') bottom no-repeat;
+  background-size: cover;
+}
+
+.box .agent-info {
+  /* width: 20rem; */
+  /* height: 12rem; */
+  background: url('image/ms-h.jpg') bottom no-repeat;
+  background-size: cover;
+}
+
+.shadow5:hover {
+  transform: rotate(3deg);
+}
+.shadow5 p {
+  margin: 0;
+}
+.shadow5 p::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.shadow5::before,
+.shadow5::after {
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  height: 20%;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+  max-width: 300px;
+}
+
+.shadow5::after{
+  right: 10px;
+  left: auto;
+  transform: rotate(3deg);
+ }
+
+</style>
+
+</html>
