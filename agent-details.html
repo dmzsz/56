@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/commont.css">
   <link rel="stylesheet" type="text/css" href="css/agent.css">
+  <link rel="stylesheet" type="text/css" href="css/shadow-card.css">
 </head>
 
 <body cz-shortcut-listen="true" class="agent-details">
@@ -56,52 +57,76 @@
                 <h3 class="port-name">
                   Port Name: Dubai
                 </h3>
-                <hr><div class="shadow shadow5"><p>旋转效果</p></div>
-                <div class="port">
-                  <ul class="vertical-box">
-                    <li class="agent-info">
-                      <div class="logo text-center">
-                        <img src="image/ya-logo.jpg" class="rounded-circle mx-auto d-block" alt="">
-                        <!-- <span class="name ">ya</span> -->
+                <hr>
+                <div class="ports">
+                  <!-- 纵向名片 -->
+                  <div class="shadow-vertical-cards">
+                    <div class="shadow-vertical-card">
+                      <div class="media">
+                        <img src="image/ya-logo.jpg" class="" alt="">
+                        <div class="media-body">
+                          <div class="info name">1</div>
+                          <div class="info company">2</div>
+                          <div class="info domain">3</div>
+                        </div>
                       </div>
-                      <ul class="message">
-                        <li class="name align-text-bottom">Name</li>
-                        <li class="company">Company</li>
-                        <li class="domain">Scope</li>
-                      </ul>
-                    </li>
-                    <li class="agent-info"></li>
-                    <li class="agent-info"></li>
-                    <li class="agent-info"></li>
-                    <li class="agent-info"></li>
-                  </ul>
-                  <ul class="box">
-                    <li class="agent-info media">
-                        <img src="image/ya-logo.jpg" class="rounded-circle align-self-center ml-3 mr-3 d-block" alt="">
-                        <div class="media-body align-self-center">
-                          <ul class="message align-self-center mt-0 mb-1">
-                            <li class="name align-text-bottom">Name</li>
-                            <li class="company">Company</li>
-                            <li class="domain">Scope</li>
-                          </ul>
+                    </div>
+                    <div class="shadow-vertical-card">
+                      <div class="media">
+                        <img src="image/ya-logo.jpg" class="" alt="">
+                        <div class="media-body">
+                          <div class="info name">1</div>
+                          <div class="info company">2</div>
+                          <div class="info domain">3</div>
+                        </div>
                       </div>
-                    </li>
-                    <li class="agent-info media"></li>
-                    <li class="agent-info media"></li>
-                    <li class="agent-info media"></li>
-                    <li class="agent-info media"></li>
-                    <li class="agent-info media"></li>
-                  </ul>
-                  
+                    </div>
+                  </div>
                 </div>
+                <!-- 纵向名片 -->
+                <!-- 横向名片 -->
+                <div class="shadow-cards">
+                  <div class="shadow-card">
+                    <div class="media">
+                      <img src="image/ya-logo.jpg" class="" alt="">
+                      <div class="media-body">
+                        <div class="info name">1</div>
+                        <div class="info company">2</div>
+                        <div class="info domain">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shadow-card">
+                    <div class="media">
+                      <img src="image/ya-logo.jpg" class="" alt="">
+                      <div class="media-body">
+                        <div class="info name">1</div>
+                        <div class="info company">2</div>
+                        <div class="info domain">3</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shadow-card">
+                    <div class="media">
+                      <img src="image/ya-logo.jpg" class="" alt="">
+                      <div class="media-body">
+                        <div class="info name">1</div>
+                        <div class="info company">2</div>
+                        <div class="info domain">3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <!-- 横向名片 -->
               </div>
-              <!-- card container -->
             </div>
+            <!-- card container -->
           </div>
         </div>
       </div>
-      <!-- search -->
     </div>
+    <!-- search -->
+  </div>
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -121,14 +146,44 @@
   background-size: cover;
 }
 
-.shadow5:hover {
-  transform: rotate(3deg);
+.shadow {
+  position: relative;
+  width: 20%;
+  float: left;
+  border: 1px solid #ccc;
+  width: 12rem;
+  height: 20rem;
+  background: white;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  background: url('image/ms-v.jpg') bottom no-repeat;
+  background-size: cover;
+  border-radius: .625rem;
+  margin: 20px;
 }
+
+
+.shadow::before,
+.shadow::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+}
+
+.shadow5:hover {
+  transform: scale(1.1);
+}
+
 .shadow5 p {
   margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
 }
+
 .shadow5 p::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   z-index: -1;
   background: #fff;
@@ -138,6 +193,7 @@
   right: 0;
   left: 0;
 }
+
 .shadow5::before,
 .shadow5::after {
   bottom: 15px;
@@ -149,12 +205,11 @@
   max-width: 300px;
 }
 
-.shadow5::after{
+.shadow5::after {
   right: 10px;
   left: auto;
   transform: rotate(3deg);
- }
-
+}
 </style>
 
 </html>

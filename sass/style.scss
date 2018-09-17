@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+
+body {
+  font-family: Consolas, "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+}
+
+header .navbar {
+  padding: 0 1rem;
+  a.navbar-brand {
+    font-weight: bold;
+  }
+}
+
+.navbar-nav a {
+  &.active span, &:hover span {
+    padding-bottom: 5px;
+    border-bottom: 3px solid blue;
+  }
+}
+
+header {
+  .navbar {
+    a.navbar-brand img {
+      width: 9em;
+    }
+    li.nav-item a.nav-link {
+      padding: 16px 8px 0;
+    }
+  }
+  .navbar-brand {
+    font-size: 30px;
+    margin-left: 150px;
+  }
+}
+
+.login .promo {
+  .modal-content {
+    min-width: 325px;
+    margin: 50px 0 0 0;
+    padding: 0px;
+    width: 320px;
+    height: 350px;
+    opacity: 0.96;
+  }
+  &.section {
+    height: 550px;
+  }
+  .intro .title {
+    padding-left: 40px;
+    padding-top: 120px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 1px 2px 5px;
+    font: bold;
+    max-width: 1000px;
+  }
+  .panel {
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
+    opacity: 0.9;
+    button {
+      opacity: 1;
+    }
+  }
+}
+
+.search {
+  .header {
+    .navbar-default {
+      margin-bottom: 0px;
+      background-color: #FFF;
+      border-color: #FFF;
+    }
+    .navbar-header {
+      padding: 10px 0;
+      .navbar-brand {
+        font-size: 50px;
+      }
+    }
+    .navbar-collapse li a {
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
+  }
+  hr {
+    background-color: rgb(63, 72, 147);
+    height: 2px;
+    margin: 0px;
+  }
+}
+
+.search-container {
+  background-color: rgba(135, 181, 180, 0.5);
+  .container .panel {
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
+  }
+  .set-count input {
+    width: 100px;
+    /* text-align: center; */
+  }
+  .statistic .container {
+    background-color: #d4ac37;
+    line-height: 2.5em;
+  }
+}

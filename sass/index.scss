@@ -1,0 +1,145 @@
+@charset 'UTF-8';
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+html {
+  height: 100%;
+}
+
+body.index {
+  font-family: Consolas, 'Graphik', 'Helvetica Neue', helvetica, 'Apple Color Emoji', arial, sans-serif;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  header {
+    position: absolute;
+    z-index: 999;
+
+    width: 100%;
+    .navbar {
+      height: 2.5em;
+
+      color: #fff;
+      background-color: rgba(255, 255, 255, .4);
+      .navbar-nav {
+        flex-direction: row;
+        .nav-link {
+          padding-right: .5rem;
+          padding-left: .5rem;
+          &.active span,
+          &:hover span {
+            padding-bottom: 5px;
+
+            border-bottom: 3px solid blue;
+          }
+        }
+      }
+    }
+  }
+  .carousel,
+  .index-containt {
+    height: 100%;
+  }
+  .carousel-fade .carousel-item {
+    transition-timing-function: ease-in-out;
+    transition-duration: 2s;
+    transition-property: opacity;
+
+    opacity: 0;
+  }
+
+  .carousel-fade {
+    .carousel-item.active,
+    .carousel-item-next.carousel-item-left,
+    .carousel-item-prev.carousel-item-right {
+      opacity: 1;
+    }
+
+    .active.carousel-item-left,
+    .active.carousel-item-right {
+      opacity: 0;
+    }
+  }
+
+
+  .carousel {
+    .carousel-inner {
+      position: absolute;
+
+      height: 100%;
+      .carousel-item {
+        height: 100%;
+
+        background-size: cover;
+        &:nth-child(1) {
+          background: url('../image/b.jpg') center no-repeat;
+          background-size: cover;
+        }
+        &:nth-child(2) {
+          background: url('../image/b1.jpg') center no-repeat;
+          background-size: cover;
+        }
+        &:nth-child(3) {
+          background: url('../image/b2.jpg') center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+    section.promo {
+      position: relative;
+
+      margin: 0;
+      padding-top: 80px; // form div
+      .modal-content {
+        width: 320px;
+        min-width: 325px;
+        height: 350px;
+        margin: 50px 0 0 0;
+        padding: 0;
+
+        color: #fff;
+        border-radius: .8rem;
+        background: rgba(0, 0, 0, .5);
+        text-shadow: black 2px 2px 5px;
+        @media (max-width: 575px) {
+          margin-left: 40px;
+        }
+        @media (max-width: map-get($grid-breakpoints, md)) {
+          margin-left: 40px;
+        }
+        a {
+          color: #fff;
+        }
+      }
+      .intro {
+        .logo {
+          margin-left: 70px;
+
+          text-shadow: black 1px 2px 3px;
+        }
+        .title {
+          font: bold;
+          /* font-family: Microsoft YaHei; */
+          font-weight: bold;
+
+          max-width: 1000px;
+          margin: 60px 0 0 70px;
+
+          color: white;
+          text-shadow: black 1px 2px 5px;
+        }
+      }
+      .panel {
+        padding: 15px;
+
+        opacity: .9;
+        box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+        button {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

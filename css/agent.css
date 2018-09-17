@@ -1,24 +1,19 @@
-.agent-details-container {
-    background-color: rgba(135, 181, 180, 0.5);
-    background: linear-gradient(to bottom, #87b5b480, white);
+.agent-details .agent-details-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 181, 180, .6)), to(white));
+  background: -webkit-linear-gradient(top, rgba(135, 181, 180, .6), white);
+  background:      -o-linear-gradient(top, rgba(135, 181, 180, .6), white);
+  background:         linear-gradient(180deg, rgba(135, 181, 180, .6), white);
+}
+.agent-details .agent-details-container .shadow-vertical-cards .shadow-vertical-card .media {
+  background: url(../image/ms-v.jpg) bottom no-repeat;
+}
+.agent-details .agent-details-container .shadow-cards .shadow-card .media {
+  background: url(../image/ms-h.jpg) bottom no-repeat;
 }
 
-.agent-details-container .container .panel {
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
+.port-name + hr {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #3f4893), color-stop(90%, white));
+  background: -webkit-linear-gradient(left, #3f4893 10%, white 90%);
+  background:      -o-linear-gradient(left, #3f4893 10%, white 90%);
+  background:         linear-gradient(to right, #3f4893 10%, white 90%);
 }
-
-.agent-details-container .set-count input {
-    width: 100px;
-    /* text-align: center; */
-}
-
-.agent-details-container .statistic .container {
-    background-color: #d4ac37;
-    line-height: 2.5em;
-}
-
-header + hr {
-    width: 50%
-}
-

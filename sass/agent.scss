@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+.agent-details {
+  .agent-details-container {
+    // background: linear-gradient(to right, #3f4893, #3f4893 10%,white);
+    background: linear-gradient(180deg,rgba(135, 181, 180, 0.6), white);
+    .shadow-vertical-cards {
+      .shadow-vertical-card .media{
+        background: url(../image/ms-v.jpg) bottom no-repeat;
+      }
+    }
+    .shadow-cards {
+      .shadow-card .media{
+        background: url(../image/ms-h.jpg) bottom no-repeat;
+      }
+    }
+
+    // background-color: rgba(135, 181, 180, .5);
+    // .container .panel {
+    //   padding: 15px;
+
+    //   box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+    // }
+    // .set-count input {
+    //   width: 100px;
+    //   /* text-align: center; */
+    // }
+    // .statistic .container {
+    //   line-height: 2.5em;
+
+    //   background-color: #d4ac37;
+    // }
+  }
+}
+
+.port-name + hr {
+  // width: 80%;
+
+  background: linear-gradient(to right, #3f4893 10%, white 90%);
+}

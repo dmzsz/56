@@ -1,0 +1,26 @@
+{
+  "name": "56",
+  "version": "1.0.0",
+  "main": "index.html",
+  "author": "dmzsz <dmzsz@sina.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "csscomb": "^4.2.0",
+    "cssnano": "^4.1.0",
+    "cssnext": "^1.8.4",
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-plugin": "^1.0.0",
+    "sugarss": "^2.0.0"
+  }
+}

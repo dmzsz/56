@@ -1,11 +1,10 @@
 body {
-  font-family: Consolas, "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  font-family: Consolas, 'Graphik', 'Helvetica Neue', helvetica, 'Apple Color Emoji', arial, sans-serif;
 }
 
 header .navbar {
   padding: 0 1rem;
 }
-
 header .navbar a.navbar-brand {
   font-weight: bold;
 }
@@ -13,10 +12,9 @@ header .navbar a.navbar-brand {
 .navbar-nav a.active span,
 .navbar-nav a:hover span {
   padding-bottom: 5px;
+
   border-bottom: 3px solid blue;
 }
-
-div {}
 
 header .navbar a.navbar-brand img {
   width: 9em;
@@ -26,19 +24,20 @@ header .navbar li.nav-item a.nav-link {
   padding: 16px 8px 0;
 }
 
-
 header .navbar-brand {
   font-size: 30px;
+
   margin-left: 150px;
 }
 
 .login .promo .modal-content {
-  min-width: 325px;
-  margin: 50px 0 0 0;
-  padding: 0px;
   width: 320px;
+  min-width: 325px;
   height: 350px;
-  opacity: 0.96;
+  margin: 50px 0 0 0;
+  padding: 0;
+
+  opacity: .96;
 }
 
 .login .promo.section {
@@ -46,66 +45,70 @@ header .navbar-brand {
 }
 
 .login .promo .intro .title {
-  padding-left: 40px;
-  padding-top: 120px;
+  font: bold;
   font-family: Microsoft YaHei;
   font-weight: bold;
+
+  max-width: 1000px; 
+  padding-top: 120px;
+  padding-left: 40px;
+
   color: white;
   text-shadow: black 1px 2px 5px;
-  font: bold;
-  max-width: 1000px;
 }
 
 .login .promo .panel {
   padding: 15px;
-  box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
-  opacity: 0.9;
-}
 
+  opacity: .9; 
+  -webkit-box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+          box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+}
 .login .promo .panel button {
   opacity: 1;
 }
 
 .search .header .navbar-default {
-  margin-bottom: 0px;
-  background-color: #FFF;
-  border-color: #FFF;
+  margin-bottom: 0;
+
+  border-color: #fff; 
+  background-color: #fff;
 }
 
 .search .header .navbar-header {
   padding: 10px 0;
 }
-
 .search .header .navbar-header .navbar-brand {
   font-size: 50px;
 }
 
 .search .header .navbar-collapse li a {
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .search hr {
-  background-color: rgb(63, 72, 147);
   height: 2px;
-  margin: 0px;
+  margin: 0; 
+
+  background-color: #3f4893;
 }
 
 .search-container {
-  background-color: rgba(135, 181, 180, 0.5);
+  background-color: rgba(135, 181, 180, .5);
 }
-
 .search-container .container .panel {
   padding: 15px;
-  box-shadow: 2px 2px 5px rgba(47, 45, 49, 0.64);
-}
 
+  -webkit-box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+          box-shadow: 2px 2px 5px rgba(47, 45, 49, .64);
+}
 .search-container .set-count input {
   width: 100px;
   /* text-align: center; */
 }
-
 .search-container .statistic .container {
+  line-height: 2.5em; 
+
   background-color: #d4ac37;
-  line-height: 2.5em;
 }
