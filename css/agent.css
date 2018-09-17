@@ -5,10 +5,10 @@
   background:         linear-gradient(180deg, rgba(135, 181, 180, .6), white);
 }
 .agent-details .agent-details-container .shadow-vertical-cards .shadow-vertical-card .media {
-  background: url(../image/ms-v.jpg) bottom no-repeat;
+  background: url(../image/ms-v.gif) bottom no-repeat;
 }
 .agent-details .agent-details-container .shadow-cards .shadow-card .media {
-  background: url(../image/ms-h.jpg) bottom no-repeat;
+  background: url(../image/ms-h.gif) bottom no-repeat;
 }
 
 .port-name + hr {

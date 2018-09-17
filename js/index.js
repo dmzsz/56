@@ -1,1 +1,3 @@
- $('.carousel').carousel({ pause: "false" });
+ $('.carousel').carousel({
+   pause: "false"
+ });
