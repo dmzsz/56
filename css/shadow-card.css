@@ -20,7 +20,7 @@
 
   width: 20rem;
   height: 12rem;
-  margin: 20px;
+  margin: 20px 10px;
 }
 .shadow-cards .shadow-card:hover {
   -webkit-transform: scale(1.1);
