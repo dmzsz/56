@@ -1,6 +1,9 @@
-  @charset 'utf-8';
+@charset 'utf-8';
 $card-header: 120px;
 $agent-logo-width: 120px;
+body{
+  width:100%;
+}
 @mixin label() {
   font-weight: bold;
 
@@ -14,20 +17,49 @@ $agent-logo-width: 120px;
 
   background-color: #8080804f;
 }
-.agent-profile ul {
-	margin-left: 50px;
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body{
+    width: 1200px;
+  }
+  .agent-profile-container .container:first-child {
+    max-width: 1140px;
+  }
 }
+
+@media (max-width: 768px) {
+  // 相差30px， 是.row造成的
+  .agent-profile .container-fluid:first-child {
+    min-width: 630px;
+    max-width: 768px; // width: 100%;
+  }
+  .agent-profile-container .container:first-child {
+    min-width: 600px;
+    max-width: 738px;
+  }
+  .agent-profile{
+    padding: 20px 0px;
+  }
+  .container-fluid .container .row{
+    flex-direction: column-reverse;
+  }
+}
+
+.agent-profile ul {
+  margin-left: 50px;
+}
+
 .agent-profile {
-  header + hr {
+  padding-right: 0px;
+  header+hr {
     height: 2px;
     margin: 0;
-
     background-color: rgb(63, 72, 147);
   }
   .agent-profile-container {
     // background: linear-gradient(to right, #3f4893, #3f4893 10%,white);
     background: linear-gradient(180deg, rgba(135, 181, 180, .6), white);
-    .left {
+    .left-col {
       position: relative;
       z-index: 0;
 
@@ -94,7 +126,7 @@ $agent-logo-width: 120px;
             vertical-align: center;
           }
         }
-        .company-media + hr {
+        .company-media+hr {
           margin: 0;
           padding: 0;
         }
@@ -109,10 +141,10 @@ $agent-logo-width: 120px;
             @include label;
           }
         }
-        .skills-ability{
-        	ul{
-        		// margin-left: 50px;
-        	}
+        .skills-ability {
+          ul {
+            // margin-left: 50px;
+          }
         }
       }
     }
@@ -122,11 +154,9 @@ $agent-logo-width: 120px;
         box-shadow: 0 0 8px;
         .card-header {
           position: relative; // display: flex;
-
           width: 100%;
           height: $card-header;
           padding: 0; // padding-bottom: 25px;
-
           text-align: center;
 
           background: url('../image/top.svg') center/cover;
@@ -143,7 +173,6 @@ $agent-logo-width: 120px;
         }
         .card-body {
           font-size: .875rem; // 14px
-
           margin-top: ($agent-logo-width)/2;
           .people {
             .info-item:first-child {
