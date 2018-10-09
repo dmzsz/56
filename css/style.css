@@ -1,5 +1,13 @@
-body {
-  font-family: Consolas, 'Graphik', 'Helvetica Neue', helvetica, 'Apple Color Emoji', arial, sans-serif;
+* {
+  font-family: Open Sans, sans-serif;
+}
+
+button,
+html,
+input,
+select,
+textarea {
+  font-family: Roboto, Helvetica Neue, sans-serif;
 }
 
 header .navbar {
